@@ -31,6 +31,7 @@ namespace task5
             Console.Write(TestData[7]);
             Console.Write(TestData[8]);
             Console.Write(TestData[9]);
+            Console.Write(" ");
         }
     }
 }

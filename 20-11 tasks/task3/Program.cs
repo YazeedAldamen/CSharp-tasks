@@ -14,6 +14,8 @@ namespace task3
             Console.WriteLine(car[0]);
             Console.WriteLine(car[1]);
             Console.WriteLine(car[2]);
+            Console.Write(car.Length);
+
         }
     }
 }
