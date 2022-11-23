@@ -16,7 +16,7 @@ namespace tasks
 
             //Task1();
 
-            //Task2();
+            Task2();
 
             //////Task3
             //int[] years = { 1763, 1972, 1925, 1916, 1984, 1124, 1950, 2020 };
@@ -72,7 +72,7 @@ namespace tasks
             int num2 = Convert.ToInt32(Console.ReadLine());
             for (int i = 1; i <= num2; i++)
             {
-                Console.WriteLine($"Number is : {i} and cube of the {i} is :{Math.Pow(i, 3)}");
+                Console.WriteLine($"Number is : {i} and cube of the {i} is :{i*i*i}"); //{Math.Pow(i,3)}
             }
 
         }
