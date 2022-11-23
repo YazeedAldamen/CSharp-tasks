@@ -12,14 +12,17 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("Task1");
+
             int[] ARR = { 1, 7, 9, 45 };
             string[] arr2 = { "Str", "alex", "moh" };
             string[] arr3 = { "the", "fox", "over", "lazy", "dog" };
 
             ///////////////////////
             //////////////////////
+
             Console.WriteLine(" ");
             Console.WriteLine("Task2");
+
             string[] fruits = { "Tomato", "Banana", "Watermelon" };
             Console.Write("Index of Banana: ");
             Console.WriteLine(Array.IndexOf(fruits, "Banana"));
@@ -28,8 +31,10 @@ namespace ConsoleApp1
 
             ///////////////////////
             //////////////////////
+
             Console.WriteLine(" ");
             Console.WriteLine("Task3");
+
             string[] movies = new string[] { "Forest Gump", "Interstellar", "Shawshank Redemption", "The Good Fellas" };
             string[] food = new string[] { "Mansaf", "Shwarma", "Kabseh" };
             string[] sport = new string[] { "Basketball", "Chess", "Football" };
@@ -51,23 +56,27 @@ namespace ConsoleApp1
             }
             ///////////////////////
             //////////////////////
+
             Console.WriteLine(" ");
             Console.WriteLine("Task4");
+
             Console.WriteLine("Input three numbers separated by comma: ");
             string num = Console.ReadLine();
             string[] numint = num.Split(',');
             int sum = 0;
             for (int i = 0; i < numint.Length; i++)
             {
-                Convert.ToInt32(numint[i]);
+                //Convert.ToInt32(numint[i]);
                 sum += Convert.ToInt32(numint[i]);
             }
             Console.WriteLine(sum);
 
             ///////////////////////
             //////////////////////
+            
             Console.WriteLine(" ");
             Console.WriteLine("Task5");
+
             int sum2 = 0;
             for (int i = 0; i <= 100; i++)
             {
@@ -75,7 +84,7 @@ namespace ConsoleApp1
                 {
                     Console.Write(i);
                     Console.Write(" ");
-                    sum2 += sum;
+                    sum2 += i;
                 }
             }
             Console.WriteLine(sum2);
@@ -83,6 +92,7 @@ namespace ConsoleApp1
 
             ///////////////////////
             //////////////////////
+
             Console.WriteLine(" ");
             Console.WriteLine("Task6");
 
@@ -91,7 +101,7 @@ namespace ConsoleApp1
 
             for (int i = 0; i < 4; i++)
             {
-                for (int k = 4 - i; k > 0; k--)
+                for (int k = 3 - i; k > 0; k--)
                 {
                     Console.Write(" ");
                 }
@@ -109,12 +119,14 @@ namespace ConsoleApp1
 
             ///////////////////////
             //////////////////////
+
             Console.WriteLine(" ");
             Console.WriteLine("Task7");
+
             int sum3 = 1;
             for (int i = 0; i < 4; i++)
             {
-                for (int k = 4 - i; k > 0; k--)
+                for (int k = 3 - i; k > 0; k--)
                 {
                     Console.Write(" ");
                 }
