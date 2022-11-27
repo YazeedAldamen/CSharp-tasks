@@ -16,7 +16,7 @@ namespace tasks
 
             //Task1();
 
-            Task2();
+            //Task2();
 
             //////Task3
             //int[] years = { 1763, 1972, 1925, 1916, 1984, 1124, 1950, 2020 };
@@ -31,12 +31,12 @@ namespace tasks
             //int legs = Task5();
             //Console.WriteLine(legs + " legs");
 
-            //////Task6
+            ////Task6
             //string[] users = { "yazeed", "mohammad", "ahmad" };
             //string[] password = { "123", "456", "789" };
             //Task6(users, password);
 
-            //////Task7
+            ////Task7
             //Console.WriteLine("Enter a number: ");
             //int num7 = Convert.ToInt32(Console.ReadLine());
             //Console.WriteLine("Enter the power: ");
@@ -46,10 +46,10 @@ namespace tasks
             //Task8();
 
 
-            //Task9();
+            Task9();
 
-            int num10 = Task10();
-            Console.WriteLine(num10);
+            //int num10 = Task10();
+            //Console.WriteLine(num10);
 
         }
         static void Task1()
@@ -172,13 +172,17 @@ namespace tasks
                     Console.WriteLine($"{leap} is not a leap year");
                 }
             }
+            else
+            {
+                Console.WriteLine("The year you entered is out of range!");
+            }
         }
 
         static void Task9()
         {
             Console.WriteLine("Enter a number: ");
             int num9 = Convert.ToInt32(Console.ReadLine());
-            if (num9 == 2 || num9 == 3)
+            if (num9 == 2 || num9 == 3 || num9 == 5 || num9 == 7)
             {
                 Console.WriteLine($"{num9} is a prime number");
             }
@@ -190,7 +194,7 @@ namespace tasks
             {
                 for (int i = 3; i < 10; i++)
                 {
-                    if (num9 % i == 0)
+                    if (num9 % i == 0 || num9 % 5 == 0 || num9 % 7 == 0)
                     {
                         Console.WriteLine($"{num9} is not a prime number");
                         break;
@@ -215,3 +219,5 @@ namespace tasks
         }
     }
 }
+
+
