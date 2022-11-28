@@ -27,9 +27,13 @@ namespace oop_task
 
         public info(int age, string gender, string name, string email, int id, string phone)
         {
-            if (age < 18 || age > 60)
+            if (age < 18 )
             {
-                Console.WriteLine("You must be between 18 and 60");
+                Console.WriteLine("You are under 18");
+            }
+            else if (age > 60)
+            {
+                Console.WriteLine("You are above 60");
             }
             else
             {
