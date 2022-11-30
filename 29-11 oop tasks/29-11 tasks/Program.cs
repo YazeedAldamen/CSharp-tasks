@@ -14,8 +14,9 @@ namespace _28_11_tasks
             Employee obj = new Employee("Ahmad", 1990, "122376");
             obj.age();
             Console.WriteLine("\n");
-            Manager obj2 = new Manager("Yazeed", 1998, "55555");
+            Employee obj2 = new Manager("Yazeed", 1998, "55555");
             obj2.age();
+
         }
     }
     class Employee
@@ -40,11 +41,11 @@ namespace _28_11_tasks
 
 
 
-        protected int currentYear = 2022;
+        protected int currentYear = DateTime.Now.Year;
         public virtual void age()
         {
 
-            int age =  currentYear - dateOfBirth ;
+            int age = currentYear - dateOfBirth;
             Console.Write("Age is :");
             Console.WriteLine(age);
 
@@ -54,7 +55,6 @@ namespace _28_11_tasks
     class Manager : Employee
     {
         public Manager(string name, int dateOfBirth, string ID) : base(name, dateOfBirth, ID) { }
-
         public override void age()
         {
 
