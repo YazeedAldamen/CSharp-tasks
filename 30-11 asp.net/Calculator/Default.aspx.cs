@@ -84,7 +84,7 @@ namespace Calculator
         {
             if (TextBox2.Text == "")
             {
-                TextBox1.Text = TextBox1.Text + "";
+                TextBox1.Text = TextBox1.Text + "4";
             }
             else
             {
@@ -169,10 +169,7 @@ namespace Calculator
         {
 
             TextBox2.Text = "+";
-            double Num1 = Convert.ToDouble(TextBox1.Text);
-            double Num2 = Convert.ToDouble(TextBox3.Text);
-            double result1 = math.sum(Num1, Num2);
-            TextBox2.Text =Convert.ToString( result1);
+            
 
         }
 
@@ -180,33 +177,54 @@ namespace Calculator
         {
 
             TextBox2.Text = "-";
-            double Num1 = Convert.ToDouble(TextBox1.Text);
-            double Num2 = Convert.ToDouble(TextBox3.Text);
-            double result1 = math.sub(Num1, Num2);
-            TextBox2.Text = Convert.ToString(result1);
+          
 
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
             TextBox2.Text = "*";
-            double Num1 = Convert.ToDouble(TextBox1.Text);
-            double Num2 = Convert.ToDouble(TextBox3.Text);
-            double result1 = math.multi(Num1, Num2);
-            TextBox2.Text = Convert.ToString(result1);
+    
         }
 
         protected void Button4_Click(object sender, EventArgs e)
         {
 
             TextBox2.Text = "/";
-            double Num1 = Convert.ToDouble(TextBox1.Text);
-            double Num2 = Convert.ToDouble(TextBox3.Text);
-            double result1 = math.div(Num1, Num2);
-            TextBox2.Text = Convert.ToString(result1);
+            
         }
 
+        protected void Button15_Click(object sender, EventArgs e)
+        {
+            double Num1 = Convert.ToDouble(TextBox1.Text);
+            double Num2 = Convert.ToDouble(TextBox3.Text);
+            switch (TextBox2.Text)
+            {
+                case "+":
+                    TextBox2.Text = Convert.ToString(math.sum(Num1, Num2));
+                    TextBox1.Text = "";
+                    TextBox3.Text = "";
+                    break;
 
+                case "-":
+                    TextBox2.Text = Convert.ToString(math.sub(Num1, Num2));
+                    TextBox1.Text = "";
+                    TextBox3.Text = "";
+                    break;
+
+                case "*":
+                    TextBox2.Text = Convert.ToString(math.multi(Num1, Num2));
+                    TextBox1.Text = "";
+                    TextBox3.Text = "";
+                    break;
+
+                case "/":
+                    TextBox2.Text = Convert.ToString(math.div(Num1, Num2));
+                    TextBox1.Text = "";
+                    TextBox3.Text = "";
+                    break;
+            }
+        }
     }
 
 }
