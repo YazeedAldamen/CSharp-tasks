@@ -225,6 +225,13 @@ namespace Calculator
                     break;
             }
         }
+
+        protected void Button16_Click(object sender, EventArgs e)
+        {
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+        }
     }
 
 }
