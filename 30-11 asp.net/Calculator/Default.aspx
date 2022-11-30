@@ -95,9 +95,7 @@
                     <td class="auto-style8" colspan="2">
                         <asp:Button ID="Button14" runat="server" Height="46px" OnClick="Button14_Click1" Text="0" Width="100px" />
                     </td>
-                    <td class="auto-style8" colspan="2">
-                        <asp:Button ID="Button15" runat="server" Height="46px" Text="=" Width="100px" />
-                    </td>
+                    
                     <td>
                         <asp:Button ID="Button4" runat="server" CssClass="auto-style3" OnClick="Button4_Click" Text="/" Width="62px" />
                     </td>
